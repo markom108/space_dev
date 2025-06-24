@@ -5,7 +5,7 @@ This repository contains various programs related to space technology and simula
 
 ## License
 All projects in this repository are protected by copyright.  
-See the [LICENSE]([LICENSE](https://github.com/markom108/space_dev/blob/main/LICENSE.md)) file for details.
+See the [LICENSE](https://github.com/markom108/space_dev/blob/main/LICENSE.md) file for details.
 _____________________________________________________________________________________________________________________________________________________________________________________________________
 # 1.Satellite Telemetry Simulator
 ## Project Purpose:
