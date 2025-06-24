@@ -8,7 +8,6 @@ CEL:
 SPIS PROGRAMU:
 alerts()- funkcja zwracająca błąd, jęśli dane pokazane przez sensory przekroczyłu ustawiony limit
 generate_fake_telemetry()- Symulujesz dane z sensorów (temperature, voltage) 
-  
 '''
 
 import time
