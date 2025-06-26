@@ -8,10 +8,13 @@ CEL:
 SPIS PROGRAMU:
 alerts()- funkcja zwracająca błąd, jęśli dane pokazane przez sensory przekroczyłu ustawiony limit
 generate_fake_telemetry()- Symulujesz dane z sensorów (temperature, voltage) 
+
+teraz testujemy jeszcze to    
 '''
 
 import time
 import random
+import json # do zmieniania formatu na JSON
 
 '''KONSOLA DLA SPECJALLISTY:'''
     #acceptable temperature parameters
@@ -24,6 +27,9 @@ MAX_VOLT=8
 TEST=True
 ID_START=0
 SAT_ID="SAT-001" #satellite id
+RECORD=True #czy chcemy zapisywać wyniki do pliku
+TRYB_ZAP="w" # w- nadpisuje, jeśli chcemy dodawać to w trybie a 
+SAVE_INTERVAL=5
 '''KONIEC KONSOLI'''
 
 
@@ -54,12 +60,24 @@ def generate_fake_telemetry(packet_id): #simulation of data from sensors
 
 def main():
     packet_id=ID_START
+    if RECORD:
+        logfile=open("telemetry_log.jsonl",TRYB_ZAP)# otwiera plik telemetry_log w trybie zapisu, logfile = obiekt pliku który może wykonywać operacje zapisu
+    
+    last_flush=time.time()#czas ostatniego zapisu(aktualny czas w sekundach)
     while TEST:
         data=generate_fake_telemetry(packet_id)
-
-        if data!=0:
-            print("Telemetry data: ", data)
+        if RECORD:
+            json_packet= json.dumps(data) #zmiana data na format json
+            logfile.write(json_packet+"\n")
+            now=time.time()
+            if now-last_flush>=SAVE_INTERVAL:
+                logfile.flush() #dane będą zapisywane do telemetry_log.jsonl "na żywo" podczas działania programu
+                last_flush=now
+        print("Telemetry data: ", data)
         time.sleep(1)
         packet_id+=1
+
+
+    logfile.close()#ważne żeby zamknąć na końcu, żeby wszystko poprawnie zapisane
 main()
 
