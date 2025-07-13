@@ -1,4 +1,4 @@
-'''
+''' GENERATOR DANYCH
 CEL:
 	1. Symulacja zbierania danych (sensor data simulation)
 	2. Pakowanie danych w formacie JSON (packet formatting)
@@ -11,7 +11,7 @@ generate_fake_telemetry()- Symulujesz dane z sensorów (temperature, voltage)
 
 teraz testujemy jeszcze to    
 '''
-
+import socket #pozwala na połączeni a sieciowe
 import time
 import random
 import json # do zmieniania formatu na JSON
@@ -27,9 +27,19 @@ MAX_VOLT=8
 TEST=True
 ID_START=0
 SAT_ID="SAT-001" #satellite id
-RECORD=True #czy chcemy zapisywać wyniki do pliku
+RECORD=False #czy chcemy zapisywać wyniki do pliku
 TRYB_ZAP="w" # w- nadpisuje, jeśli chcemy dodawać to w trybie a 
 SAVE_INTERVAL=5
+
+#łączenie z satelitą
+SERVER=True
+if SERVER: 
+    client_socket= socket.socket(socket.AF_INET, socket.SOCK_STREAM)# (określenie jakiego formatu adresu IP będziemy używać,określenie typu komunikacji))
+    #dane serwera(gdzie ma się łączyć) - te same co w ground station
+    host='127.0.0.1' #lokalny host, bo wszystko na tym samym komputerze
+    port=5000
+
+
 '''KONIEC KONSOLI'''
 
 
@@ -60,24 +70,37 @@ def generate_fake_telemetry(packet_id): #simulation of data from sensors
 
 def main():
     packet_id=ID_START
+
     if RECORD:
         logfile=open("telemetry_log.jsonl",TRYB_ZAP)# otwiera plik telemetry_log w trybie zapisu, logfile = obiekt pliku który może wykonywać operacje zapisu
+
+    if SERVER:
+
+        client_socket.connect((host,port))#tworzenie połączenia TCP z moim serwerem (najpierw chcę połączyć się z serwerem, zanim zaczne wysyłać dane)
     
     last_flush=time.time()#czas ostatniego zapisu(aktualny czas w sekundach)
-    while TEST:
-        data=generate_fake_telemetry(packet_id)
-        if RECORD:
+    
+    try: # kod, który może rzucić wyjątek (BŁĄD-> PRZERYWA, probi finally i wyrzuca błąd)
+        while TEST:
+            data=generate_fake_telemetry(packet_id)
             json_packet= json.dumps(data) #zmiana data na format json
-            logfile.write(json_packet+"\n")
-            now=time.time()
-            if now-last_flush>=SAVE_INTERVAL:
-                logfile.flush() #dane będą zapisywane do telemetry_log.jsonl "na żywo" podczas działania programu
-                last_flush=now
-        print("Telemetry data: ", data)
-        time.sleep(1)
-        packet_id+=1
+            if RECORD:#czy chcesz zapisywać do pliku
+                logfile.write(json_packet+"\n")
+                now=time.time()
+                if now-last_flush>=SAVE_INTERVAL:
+                    logfile.flush() #dane będą zapisywane do telemetry_log.jsonl "na żywo" podczas działania programu (trochę spowalnia program)
+                    last_flush=now
+            
+            if SERVER: #czy chcemy przesyłać na server
+                client_socket.send(json_packet.encode())#wysyłanie pakietu
 
-
-    logfile.close()#ważne żeby zamknąć na końcu, żeby wszystko poprawnie zapisane
+            #print("Telemetry data: ", data)
+            time.sleep(1)
+            packet_id+=1
+    finally: # ten kod wykona się zawsze, nawet jeśli wyjątek wystąpi
+        if SERVER:
+            client_socket.close()
+        if RECORD:
+            logfile.close()#ważne żeby zamknąć na końcu, żeby wszystko poprawnie zapisane
 main()
 
