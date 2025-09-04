@@ -24,4 +24,17 @@ Simulation of satellite telemetry data collection, including:
 Clone the repository:
 ```bash
 git clone https://github.com/markom108/space_dev.git
+```
+_____________________________________________________________________________________________________________________________________________________________________________________________________
+# 2.
+## Project Purpose:
+
+
+## Features
+
+
+## How to Run
+Clone the repository:
+```bash
+git clone https://github.com/markom108/space_dev.git
 
