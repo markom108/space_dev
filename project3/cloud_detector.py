@@ -10,6 +10,7 @@ import time #liczenie czasu
 TEST_SIZE=0.2#ile procent przykładów idzie na test (reszta danych idzie na trening)
 SEED=42
 
+
 #----------------------ETAP 1:WCZYTAJ DANE
 path_red= "38-Cloud_training/train_red/red_patch_6_1_by_6_LC08_L1TP_032029_20160420_20170223_01_T1.TIF"
 path_green="38-Cloud_training/train_green/green_patch_6_1_by_6_LC08_L1TP_032029_20160420_20170223_01_T1.TIF"
