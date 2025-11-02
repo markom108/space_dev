@@ -1,0 +1,91 @@
+[
+  {"id": "SAT-001", "energy": 35, "distance_to_station": 15, "time": "2025-10-05 12:00:00"},
+  {"id": "SAT-002", "energy": 25, "distance_to_station": 25, "time": "2025-10-05 12:00:00"},
+  {"id": "SAT-003", "energy": 40, "distance_to_station": 10, "time": "2025-10-05 12:00:00"},
+  {"id": "SAT-004", "energy": 30, "distance_to_station": 20, "time": "2025-10-05 12:00:00"},
+  {"id": "SAT-005", "energy": 45, "distance_to_station": 30, "time": "2025-10-05 12:00:00"},
+
+  {"id": "SAT-001", "energy": 33, "distance_to_station": 12, "time": "2025-10-05 12:05:00"},
+  {"id": "SAT-002", "energy": 22, "distance_to_station": 22, "time": "2025-10-05 12:05:00"},
+  {"id": "SAT-003", "energy": 38, "distance_to_station": 8, "time": "2025-10-05 12:05:00"},
+  {"id": "SAT-004", "energy": 28, "distance_to_station": 17, "time": "2025-10-05 12:05:00"},
+  {"id": "SAT-005", "energy": 42, "distance_to_station": 27, "time": "2025-10-05 12:05:00"},
+
+  {"id": "SAT-001", "energy": 30, "distance_to_station": 10, "time": "2025-10-05 12:10:00"},
+  {"id": "SAT-002", "energy": 20, "distance_to_station": 18, "time": "2025-10-05 12:10:00"},
+  {"id": "SAT-003", "energy": 35, "distance_to_station": 6, "time": "2025-10-05 12:10:00"},
+  {"id": "SAT-004", "energy": 25, "distance_to_station": 15, "time": "2025-10-05 12:10:00"},
+  {"id": "SAT-005", "energy": 40, "distance_to_station": 24, "time": "2025-10-05 12:10:00"},
+
+  {"id": "SAT-001", "energy": 28, "distance_to_station": 5, "time": "2025-10-05 12:15:00"},
+  {"id": "SAT-002", "energy": 18, "distance_to_station": 12, "time": "2025-10-05 12:15:00"},
+  {"id": "SAT-003", "energy": 32, "distance_to_station": 3, "time": "2025-10-05 12:15:00"},
+  {"id": "SAT-004", "energy": 22, "distance_to_station": 10, "time": "2025-10-05 12:15:00"},
+  {"id": "SAT-005", "energy": 38, "distance_to_station": 20, "time": "2025-10-05 12:15:00"},
+
+  {"id": "SAT-001", "energy": 25, "distance_to_station": 0, "time": "2025-10-05 12:20:00"},
+  {"id": "SAT-002", "energy": 15, "distance_to_station": 5, "time": "2025-10-05 12:20:00"},
+  {"id": "SAT-003", "energy": 30, "distance_to_station": 0, "time": "2025-10-05 12:20:00"},
+  {"id": "SAT-004", "energy": 20, "distance_to_station": 5, "time": "2025-10-05 12:20:00"},
+  {"id": "SAT-005", "energy": 35, "distance_to_station": 15, "time": "2025-10-05 12:20:00"},
+
+  {"id": "SAT-001", "energy": 27, "distance_to_station": 0, "time": "2025-10-05 12:25:00"},
+  {"id": "SAT-002", "energy": 18, "distance_to_station": 0, "time": "2025-10-05 12:25:00"},
+  {"id": "SAT-003", "energy": 32, "distance_to_station": 0, "time": "2025-10-05 12:25:00"},
+  {"id": "SAT-004", "energy": 22, "distance_to_station": 0, "time": "2025-10-05 12:25:00"},
+  {"id": "SAT-005", "energy": 37, "distance_to_station": 0, "time": "2025-10-05 12:25:00"},
+
+  {"id": "SAT-001", "energy": 32, "distance_to_station": 0, "time": "2025-10-05 12:30:00"},
+  {"id": "SAT-002", "energy": 22, "distance_to_station": 0, "time": "2025-10-05 12:30:00"},
+  {"id": "SAT-003", "energy": 36, "distance_to_station": 0, "time": "2025-10-05 12:30:00"},
+  {"id": "SAT-004", "energy": 26, "distance_to_station": 0, "time": "2025-10-05 12:30:00"},
+  {"id": "SAT-005", "energy": 40, "distance_to_station": 0, "time": "2025-10-05 12:30:00"},
+
+  {"id": "SAT-001", "energy": 37, "distance_to_station": 0, "time": "2025-10-05 12:35:00"},
+  {"id": "SAT-002", "energy": 26, "distance_to_station": 0, "time": "2025-10-05 12:35:00"},
+  {"id": "SAT-003", "energy": 40, "distance_to_station": 0, "time": "2025-10-05 12:35:00"},
+  {"id": "SAT-004", "energy": 30, "distance_to_station": 0, "time": "2025-10-05 12:35:00"},
+  {"id": "SAT-005", "energy": 43, "distance_to_station": 0, "time": "2025-10-05 12:35:00"},
+
+  {"id": "SAT-001", "energy": 40, "distance_to_station": 0, "time": "2025-10-05 12:40:00"},
+  {"id": "SAT-002", "energy": 30, "distance_to_station": 0, "time": "2025-10-05 12:40:00"},
+  {"id": "SAT-003", "energy": 45, "distance_to_station": 0, "time": "2025-10-05 12:40:00"},
+  {"id": "SAT-004", "energy": 35, "distance_to_station": 0, "time": "2025-10-05 12:40:00"},
+  {"id": "SAT-005", "energy": 50, "distance_to_station": 0, "time": "2025-10-05 12:40:00"},
+
+    {"id": "SAT-001", "energy": 28, "distance_to_station": 5, "time": "2025-10-05 12:45:00"},
+  {"id": "SAT-002", "energy": 22, "distance_to_station": 3, "time": "2025-10-05 12:45:00"},
+  {"id": "SAT-003", "energy": 4, "distance_to_station": 12, "time": "2025-10-05 12:45:00"},   
+  {"id": "SAT-004", "energy": 20, "distance_to_station": 7, "time": "2025-10-05 12:45:00"},
+  {"id": "SAT-005", "energy": 18, "distance_to_station": 15, "time": "2025-10-05 12:45:00"},
+
+  {"id": "SAT-001", "energy": 30, "distance_to_station": 3, "time": "2025-10-05 12:50:00"},
+  {"id": "SAT-002", "energy": 20, "distance_to_station": 2, "time": "2025-10-05 12:50:00"},
+  {"id": "SAT-003", "energy": 3, "distance_to_station": 10, "time": "2025-10-05 12:50:00"},  
+  {"id": "SAT-004", "energy": 18, "distance_to_station": 5, "time": "2025-10-05 12:50:00"},
+  {"id": "SAT-005", "energy": 4, "distance_to_station": 12, "time": "2025-10-05 12:50:00"},  
+
+  {"id": "SAT-001", "energy": 32, "distance_to_station": 0, "time": "2025-10-05 12:55:00"},
+  {"id": "SAT-002", "energy": 18, "distance_to_station": 0, "time": "2025-10-05 12:55:00"},
+  {"id": "SAT-003", "energy": 2, "distance_to_station": 8, "time": "2025-10-05 12:55:00"},   
+  {"id": "SAT-004", "energy": 15, "distance_to_station": 0, "time": "2025-10-05 12:55:00"},
+  {"id": "SAT-005", "energy": 5, "distance_to_station": 10, "time": "2025-10-05 12:55:00"},  
+
+  {"id": "SAT-001", "energy": 35, "distance_to_station": 0, "time": "2025-10-05 13:00:00"},
+  {"id": "SAT-002", "energy": 16, "distance_to_station": 0, "time": "2025-10-05 13:00:00"},
+  {"id": "SAT-003", "energy": 1, "distance_to_station": 5, "time": "2025-10-05 13:00:00"},   
+  {"id": "SAT-004", "energy": 12, "distance_to_station": 0, "time": "2025-10-05 13:00:00"},
+  {"id": "SAT-005", "energy": 3, "distance_to_station": 8, "time": "2025-10-05 13:00:00"},   
+
+  {"id": "SAT-001", "energy": 38, "distance_to_station": 0, "time": "2025-10-05 13:05:00"},
+  {"id": "SAT-002", "energy": 15, "distance_to_station": 0, "time": "2025-10-05 13:05:00"},
+  {"id": "SAT-003", "energy": 2, "distance_to_station": 3, "time": "2025-10-05 13:05:00"},   
+  {"id": "SAT-004", "energy": 10, "distance_to_station": 0, "time": "2025-10-05 13:05:00"},
+  {"id": "SAT-005", "energy": 1, "distance_to_station": 5, "time": "2025-10-05 13:05:00"},   
+
+  {"id": "SAT-001", "energy": 40, "distance_to_station": 0, "time": "2025-10-05 13:10:00"},
+  {"id": "SAT-002", "energy": 14, "distance_to_station": 0, "time": "2025-10-05 13:10:00"},
+  {"id": "SAT-003", "energy": 1, "distance_to_station": 0, "time": "2025-10-05 13:10:00"},   
+  {"id": "SAT-004", "energy": 8, "distance_to_station": 0, "time": "2025-10-05 13:10:00"},
+  {"id": "SAT-005", "energy": 2, "distance_to_station": 0, "time": "2025-10-05 13:10:00"}    
+]

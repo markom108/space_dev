@@ -1,0 +1,4 @@
+URUCHAMIANIE:
+1. uruchom server
+2. otwórz nowy terminal (ctrl+shift+`)
+3. uruchom plik klienta (python P1_artyfical_satelite_simulator.py)

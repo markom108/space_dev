@@ -1,0 +1,1 @@
+ distance=sat["distance_to_station"]

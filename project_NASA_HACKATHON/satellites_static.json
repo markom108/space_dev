@@ -1,0 +1,37 @@
+{
+  "SAT-001": {
+    "capacity": 100,
+    "speed_km_per_sec": 20,
+    "power_consumption": 1,
+    "energy_per_km": 0.1,
+    "charge_rate": 5
+  },
+  "SAT-002": {
+    "capacity": 100,
+    "speed_km_per_sec": 18,
+    "power_consumption": 1.2,
+    "energy_per_km": 0.12,
+    "charge_rate": 4
+  },
+  "SAT-003": {
+    "capacity": 120,
+    "speed_km_per_sec": 22,
+    "power_consumption": 0.9,
+    "energy_per_km": 0.11,
+    "charge_rate": 6
+  },
+  "SAT-004": {
+    "capacity": 90,
+    "speed_km_per_sec": 19,
+    "power_consumption": 1.1,
+    "energy_per_km": 0.09,
+    "charge_rate": 5
+  },
+  "SAT-005": {
+    "capacity": 110,
+    "speed_km_per_sec": 21,
+    "power_consumption": 1,
+    "energy_per_km": 0.1,
+    "charge_rate": 5
+  }
+}
