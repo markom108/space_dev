@@ -1,6 +1,3 @@
-Jasne! Poniżej masz **pełną dokumentację projektu w formacie Markdown** gotową do wklejenia jako `README.md`. Całość jest w jednym spójnym pliku.
-
-````markdown
 # Space Communication Windows Scheduler
 
 ## Opis projektu
@@ -23,7 +20,7 @@ Aplikacja generuje:
   ```bash
   pip install skyfield numpy matplotlib requests
   ```
-````
+
 
 - Dostęp do internetu (do pobierania aktualnych TLE satelitów z CelesTrak).
 
@@ -139,11 +136,3 @@ Program działa w pętli:
 | Żółty (#FFD700)   | Satelita może być w cieniu, ale stacja w nocy                  |
 | Szary (#A9A9A9)   | Satelita niewidoczny, stacja w ciągu dnia lub brak widoczności |
 
-```
-
----
-
-Jeśli chcesz, mogę zrobić jeszcze **wersję README z krótkim wstępem, przykładami i mini-zrzutem wykresu Gantta**, idealną dla GitHuba, żeby wyglądała bardziej profesjonalnie i przyciągała uwagę.
-
-Chcesz, żebym ją zrobił?
-```
