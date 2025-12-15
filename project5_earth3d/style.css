@@ -1,0 +1,16 @@
+/* hide default cursor on the whole element (body<=>page)*/
+html, body{
+    cursor: none;
+}
+
+/*style new civilisation cursor (# <=> id)*/
+#cursor {
+    width: 32px;
+    height: 32px;
+    position: fixed; /*Positions relative to the browser window => when scrolling the page, the cursor stays*/
+    pointer-events: none;/*dont block interaction with other elements => allows clicking on things*/
+    background-image: url(resources/Civilisation_pointer_sprint_sheets.png);
+    background-repeat: no-repeat; /*only one frame visible*/
+    display: none;
+}
+
